@@ -165,6 +165,29 @@ class GameVC: UIViewController, ADInterstitialAdDelegate {
     }
     
     @IBAction func backPressed() {
+        
+        if self.game.isASavedGame {
+        
+        // Save updated levels if it was a loaded game
+        // Update CoreData Values
+         print("updating saved game details")
+            let context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+            let savedLevelsRequest = NSFetchRequest(entityName: "SavedLevels")
+            do {
+                let savedDetails = try context.executeFetchRequest(savedLevelsRequest) as! [SavedLevels]
+                if savedDetails.count != 0 {
+                    let data = savedDetails[0]
+                    data.setValue(self.game.level, forKey: "\(self.game.title)Level")
+                    data.setValue(self.game.lives, forKey: "\(self.game.title)Lives")
+                    print("\(data)")
+                    do {
+                        try context.save()
+                    } catch {print("saveButtonPressed catch 1")}
+                    
+                }
+            } catch {print("saveButtonPressed catch 2")}
+        }
+        
         self.navigationController?.popToRootViewControllerAnimated(true)
     }
     

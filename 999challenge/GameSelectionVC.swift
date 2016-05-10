@@ -270,6 +270,7 @@ class GameSelectionVC: UIViewController, SKProductsRequestDelegate, SKPaymentTra
     
     func updateLoadedDate(){
         if self.loadSavedLevel {
+            
             switch self.selectedGameTag {
             case 1 :
                 self.loadedGame = Game(gameType: selectedGameTag)
@@ -278,6 +279,7 @@ class GameSelectionVC: UIViewController, SKProductsRequestDelegate, SKPaymentTra
                         self.loadedGame?.level = Int(self.savedLevels[0].challengeLevel!)
                         self.loadedGame?.lives = Int(self.savedLevels[0].challengeLives!)
                         self.loadedGame?.currentRecord = Int(self.savedLevels[0].challengeRecord!)
+                        self.loadedGame?.isASavedGame = true
                     }
                 }
                 break
@@ -288,6 +290,7 @@ class GameSelectionVC: UIViewController, SKProductsRequestDelegate, SKPaymentTra
                         self.loadedGame?.level = Int(self.savedLevels[0].infiniteLevel!)
                         self.loadedGame?.lives = Int(self.savedLevels[0].infiniteLives!)
                         self.loadedGame?.currentRecord = Int(self.savedLevels[0].infiniteRecord!)
+                        self.loadedGame?.isASavedGame = true
                     }
                 }
                 break
@@ -298,6 +301,7 @@ class GameSelectionVC: UIViewController, SKProductsRequestDelegate, SKPaymentTra
                         self.loadedGame?.level = Int(self.savedLevels[0].randomLevel!)
                         self.loadedGame?.lives = Int(self.savedLevels[0].randomLives!)
                         self.loadedGame?.currentRecord = Int(self.savedLevels[0].randomRecord!)
+                        self.loadedGame?.isASavedGame = true
                     }
                 }
                 break
@@ -308,6 +312,7 @@ class GameSelectionVC: UIViewController, SKProductsRequestDelegate, SKPaymentTra
                         self.loadedGame?.level = Int(self.savedLevels[0].chillLevel!)
                         self.loadedGame?.lives = Int(self.savedLevels[0].chillLives!)
                         self.loadedGame?.currentRecord = Int(self.savedLevels[0].chillRecord!)
+                        self.loadedGame?.isASavedGame = true
                     }
                 }
                 break

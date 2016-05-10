@@ -18,6 +18,7 @@ class Game {
     var gameType : GameType?
     var title : String!
     var currentRecord : Int?
+    var isASavedGame : Bool = false
     
     var currentTarget : Int {
         get {
