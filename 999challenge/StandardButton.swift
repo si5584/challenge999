@@ -10,12 +10,10 @@ import UIKit
 
 class StandardButton: UIButton {
 
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-        // Drawing code
+    override func awakeFromNib() {
+        self.layer.cornerRadius = 5.0
+        self.backgroundColor = UIColor(red: 0/255, green: 155/255, blue: 255/255, alpha: 0.87)
+        self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
     }
-    */
 
 }

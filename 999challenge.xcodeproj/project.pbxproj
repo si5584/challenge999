@@ -7,23 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F438663C1CAC6A8800BA1B85 /* SavedLevels+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F438663A1CAC6A8800BA1B85 /* SavedLevels+CoreDataProperties.swift */; };
+		F438663D1CAC6A8800BA1B85 /* SavedLevels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F438663B1CAC6A8800BA1B85 /* SavedLevels.swift */; };
 		F47521761C9A033400D39FBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47521751C9A033400D39FBC /* AppDelegate.swift */; };
 		F47521781C9A033400D39FBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47521771C9A033400D39FBC /* ViewController.swift */; };
-		F475217B1C9A033400D39FBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47521791C9A033400D39FBC /* Main.storyboard */; };
 		F475217E1C9A033400D39FBC /* _99challenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F475217C1C9A033400D39FBC /* _99challenge.xcdatamodeld */; };
 		F47521801C9A033400D39FBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F475217F1C9A033400D39FBC /* Assets.xcassets */; };
 		F47521831C9A033400D39FBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47521811C9A033400D39FBC /* LaunchScreen.storyboard */; };
+		F475218E1C9A044700D39FBC /* GameSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F475218D1C9A044700D39FBC /* GameSelectionVC.swift */; };
+		F47521901C9A05E800D39FBC /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F475218F1C9A05E800D39FBC /* GameVC.swift */; };
+		F47521921C9A157000D39FBC /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47521911C9A157000D39FBC /* Game.swift */; };
+		F47521941C9B5F6B00D39FBC /* StandardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47521931C9B5F6B00D39FBC /* StandardButton.swift */; };
+		F47A235D1CAB913200A0B1A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47A235B1CAB913200A0B1A2 /* Main.storyboard */; };
+		F483FC5C1CA5F16300202105 /* GameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F483FC5A1CA5F16300202105 /* GameType.swift */; };
+		F483FC601CA5FE4F00202105 /* GameType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F483FC5F1CA5FE4F00202105 /* GameType+CoreDataProperties.swift */; };
+		F483FC621CAA528F00202105 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F483FC611CAA528F00202105 /* iAd.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F438663A1CAC6A8800BA1B85 /* SavedLevels+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SavedLevels+CoreDataProperties.swift"; path = "../SavedLevels+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F438663B1CAC6A8800BA1B85 /* SavedLevels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SavedLevels.swift; path = ../SavedLevels.swift; sourceTree = "<group>"; };
 		F47521721C9A033400D39FBC /* 999challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 999challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47521751C9A033400D39FBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F47521771C9A033400D39FBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F475217A1C9A033400D39FBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F475217D1C9A033400D39FBC /* _99challenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = _99challenge.xcdatamodel; sourceTree = "<group>"; };
 		F475217F1C9A033400D39FBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F47521821C9A033400D39FBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F47521841C9A033400D39FBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F475218D1C9A044700D39FBC /* GameSelectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSelectionVC.swift; sourceTree = "<group>"; };
+		F475218F1C9A05E800D39FBC /* GameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
+		F47521911C9A157000D39FBC /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		F47521931C9B5F6B00D39FBC /* StandardButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardButton.swift; sourceTree = "<group>"; };
+		F47A235C1CAB913200A0B1A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F483FC5A1CA5F16300202105 /* GameType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameType.swift; path = ../GameType.swift; sourceTree = "<group>"; };
+		F483FC5F1CA5FE4F00202105 /* GameType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "GameType+CoreDataProperties.swift"; path = "../GameType+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F483FC611CAA528F00202105 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F483FC621CAA528F00202105 /* iAd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +59,7 @@
 		F47521691C9A033400D39FBC = {
 			isa = PBXGroup;
 			children = (
+				F483FC611CAA528F00202105 /* iAd.framework */,
 				F47521741C9A033400D39FBC /* 999challenge */,
 				F47521731C9A033400D39FBC /* Products */,
 			);
@@ -56,15 +76,47 @@
 		F47521741C9A033400D39FBC /* 999challenge */ = {
 			isa = PBXGroup;
 			children = (
+				F475218C1C9A041D00D39FBC /* controller */,
+				F475218B1C9A041900D39FBC /* view */,
+				F475218A1C9A040D00D39FBC /* model */,
 				F47521751C9A033400D39FBC /* AppDelegate.swift */,
-				F47521771C9A033400D39FBC /* ViewController.swift */,
-				F47521791C9A033400D39FBC /* Main.storyboard */,
+				F47A235B1CAB913200A0B1A2 /* Main.storyboard */,
 				F475217F1C9A033400D39FBC /* Assets.xcassets */,
 				F47521811C9A033400D39FBC /* LaunchScreen.storyboard */,
 				F47521841C9A033400D39FBC /* Info.plist */,
 				F475217C1C9A033400D39FBC /* _99challenge.xcdatamodeld */,
 			);
 			path = 999challenge;
+			sourceTree = "<group>";
+		};
+		F475218A1C9A040D00D39FBC /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F438663A1CAC6A8800BA1B85 /* SavedLevels+CoreDataProperties.swift */,
+				F438663B1CAC6A8800BA1B85 /* SavedLevels.swift */,
+				F483FC5F1CA5FE4F00202105 /* GameType+CoreDataProperties.swift */,
+				F483FC5A1CA5F16300202105 /* GameType.swift */,
+				F47521911C9A157000D39FBC /* Game.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		F475218B1C9A041900D39FBC /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F47521931C9B5F6B00D39FBC /* StandardButton.swift */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		F475218C1C9A041D00D39FBC /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				F47521771C9A033400D39FBC /* ViewController.swift */,
+				F475218D1C9A044700D39FBC /* GameSelectionVC.swift */,
+				F475218F1C9A05E800D39FBC /* GameVC.swift */,
+			);
+			name = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +177,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F47A235D1CAB913200A0B1A2 /* Main.storyboard in Resources */,
 				F47521831C9A033400D39FBC /* LaunchScreen.storyboard in Resources */,
 				F47521801C9A033400D39FBC /* Assets.xcassets in Resources */,
-				F475217B1C9A033400D39FBC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,28 +191,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				F47521781C9A033400D39FBC /* ViewController.swift in Sources */,
+				F483FC5C1CA5F16300202105 /* GameType.swift in Sources */,
+				F47521921C9A157000D39FBC /* Game.swift in Sources */,
+				F475218E1C9A044700D39FBC /* GameSelectionVC.swift in Sources */,
 				F47521761C9A033400D39FBC /* AppDelegate.swift in Sources */,
+				F47521901C9A05E800D39FBC /* GameVC.swift in Sources */,
+				F483FC601CA5FE4F00202105 /* GameType+CoreDataProperties.swift in Sources */,
+				F47521941C9B5F6B00D39FBC /* StandardButton.swift in Sources */,
+				F438663C1CAC6A8800BA1B85 /* SavedLevels+CoreDataProperties.swift in Sources */,
 				F475217E1C9A033400D39FBC /* _99challenge.xcdatamodeld in Sources */,
+				F438663D1CAC6A8800BA1B85 /* SavedLevels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F47521791C9A033400D39FBC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F475217A1C9A033400D39FBC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F47521811C9A033400D39FBC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F47521821C9A033400D39FBC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F47A235B1CAB913200A0B1A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F47A235C1CAB913200A0B1A2 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -290,6 +350,7 @@
 				F47521891C9A033400D39FBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
