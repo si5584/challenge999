@@ -22,6 +22,7 @@
 		F483FC5C1CA5F16300202105 /* GameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F483FC5A1CA5F16300202105 /* GameType.swift */; };
 		F483FC601CA5FE4F00202105 /* GameType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F483FC5F1CA5FE4F00202105 /* GameType+CoreDataProperties.swift */; };
 		F483FC621CAA528F00202105 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F483FC611CAA528F00202105 /* iAd.framework */; };
+		F4A4891F1CE379330051A08C /* ReviewRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A4891E1CE379330051A08C /* ReviewRequestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		F483FC5A1CA5F16300202105 /* GameType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameType.swift; path = ../GameType.swift; sourceTree = "<group>"; };
 		F483FC5F1CA5FE4F00202105 /* GameType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "GameType+CoreDataProperties.swift"; path = "../GameType+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F483FC611CAA528F00202105 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		F4A4891E1CE379330051A08C /* ReviewRequestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewRequestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				F47521931C9B5F6B00D39FBC /* StandardButton.swift */,
+				F4A4891E1CE379330051A08C /* ReviewRequestView.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				F483FC5C1CA5F16300202105 /* GameType.swift in Sources */,
 				F47521921C9A157000D39FBC /* Game.swift in Sources */,
 				F475218E1C9A044700D39FBC /* GameSelectionVC.swift in Sources */,
+				F4A4891F1CE379330051A08C /* ReviewRequestView.swift in Sources */,
 				F47521761C9A033400D39FBC /* AppDelegate.swift in Sources */,
 				F47521901C9A05E800D39FBC /* GameVC.swift in Sources */,
 				F483FC601CA5FE4F00202105 /* GameType+CoreDataProperties.swift in Sources */,

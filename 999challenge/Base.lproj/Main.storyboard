@@ -352,6 +352,66 @@
                                     <action selector="saveButtonPressed:" destination="0rg-eD-WvN" eventType="touchUpInside" id="gT0-CC-qtl"/>
                                 </connections>
                             </button>
+                            <view hidden="YES" alpha="0.94999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5xD-yv-xZp" customClass="ReviewRequestView" customModule="_99challenge" customModuleProvider="target">
+                                <rect key="frame" x="5" y="5" width="590" height="590"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3RJ-zE-WWs" customClass="ReviewRequestView" customModule="_99challenge" customModuleProvider="target">
+                                        <rect key="frame" x="146" y="68" width="300" height="400"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKd-eV-baO" customClass="StandardButton" customModule="_99challenge" customModuleProvider="target">
+                                                <rect key="frame" x="109" y="323" width="83" height="30"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <state key="normal" title="Close"/>
+                                                <connections>
+                                                    <action selector="reviewRequestCloseBtn:" destination="0rg-eD-WvN" eventType="touchUpInside" id="G6a-Jd-gIu"/>
+                                                </connections>
+                                            </button>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DUg-Ds-cAJ">
+                                                <rect key="frame" x="30" y="100" width="240" height="160"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="156" id="Jzf-mJ-WiB"/>
+                                                </constraints>
+                                                <string key="text">Well done on reaching Level 4!If you are enjoying the 999challenge please help us by providing a review on the AppStore and sharing your success with friends on Facebook!</string>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Congratulatons" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NdF-Gr-8rp">
+                                                <rect key="frame" x="30" y="25" width="240" height="39"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="240" id="ffo-cL-1mU"/>
+                                                    <constraint firstAttribute="height" constant="39" id="uWD-8g-z5X"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        <constraints>
+                                            <constraint firstItem="NdF-Gr-8rp" firstAttribute="top" secondItem="3RJ-zE-WWs" secondAttribute="top" constant="25" id="5Cq-kA-7Ct"/>
+                                            <constraint firstAttribute="width" constant="300" id="Bbo-T1-VDM"/>
+                                            <constraint firstAttribute="trailing" secondItem="DUg-Ds-cAJ" secondAttribute="trailing" constant="30" id="CkH-hw-cnX"/>
+                                            <constraint firstAttribute="height" constant="400" id="FJB-W3-HSz"/>
+                                            <constraint firstItem="DUg-Ds-cAJ" firstAttribute="top" secondItem="NdF-Gr-8rp" secondAttribute="bottom" constant="36" id="HIr-AN-dQE"/>
+                                            <constraint firstItem="DUg-Ds-cAJ" firstAttribute="leading" secondItem="3RJ-zE-WWs" secondAttribute="leading" constant="30" id="Ta4-7N-Hq6"/>
+                                            <constraint firstItem="DUg-Ds-cAJ" firstAttribute="top" secondItem="3RJ-zE-WWs" secondAttribute="top" constant="100" id="Xgs-RV-3Kk"/>
+                                            <constraint firstItem="NdF-Gr-8rp" firstAttribute="centerX" secondItem="3RJ-zE-WWs" secondAttribute="centerX" id="vtt-y3-dTo"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Xgs-RV-3Kk"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="3RJ-zE-WWs" firstAttribute="centerX" secondItem="5xD-yv-xZp" secondAttribute="centerX" id="cbz-cI-DM2"/>
+                                    <constraint firstItem="3RJ-zE-WWs" firstAttribute="centerY" secondItem="5xD-yv-xZp" secondAttribute="centerY" id="pA7-RN-eRm"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -362,13 +422,17 @@
                             <constraint firstItem="b6F-dP-DhG" firstAttribute="leading" secondItem="N2h-vQ-vCU" secondAttribute="leadingMargin" constant="3" id="PGW-RF-Hvv"/>
                             <constraint firstItem="qSx-Tn-Kq3" firstAttribute="leading" secondItem="b6F-dP-DhG" secondAttribute="leading" id="QOR-7h-qQX"/>
                             <constraint firstItem="yiC-vR-vtj" firstAttribute="top" secondItem="C9a-g5-3yx" secondAttribute="bottom" constant="20" id="TPk-KL-Qeu"/>
+                            <constraint firstItem="5xD-yv-xZp" firstAttribute="top" secondItem="N2h-vQ-vCU" secondAttribute="top" constant="5" id="VuD-hJ-M8Z"/>
                             <constraint firstItem="00o-Pu-uDi" firstAttribute="centerX" secondItem="N2h-vQ-vCU" secondAttribute="centerX" id="YLA-xY-Tm6"/>
+                            <constraint firstAttribute="trailing" secondItem="5xD-yv-xZp" secondAttribute="trailing" constant="5" id="Yv5-IO-XAA"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jrK-yD-RPX" secondAttribute="trailing" id="dpC-oI-Xyk"/>
                             <constraint firstItem="qSx-Tn-Kq3" firstAttribute="top" secondItem="b6F-dP-DhG" secondAttribute="bottom" constant="17" id="e0A-li-wZ3"/>
+                            <constraint firstItem="5xD-yv-xZp" firstAttribute="leading" secondItem="N2h-vQ-vCU" secondAttribute="leading" constant="5" id="eHK-FQ-Ddx"/>
                             <constraint firstItem="mbY-n5-oDX" firstAttribute="centerY" secondItem="N2h-vQ-vCU" secondAttribute="centerY" id="fm2-r5-LhR"/>
                             <constraint firstItem="C9a-g5-3yx" firstAttribute="leading" secondItem="N2h-vQ-vCU" secondAttribute="leadingMargin" id="l80-UQ-WVC"/>
                             <constraint firstItem="yiC-vR-vtj" firstAttribute="top" secondItem="yX0-OU-DMG" secondAttribute="bottom" constant="20" id="qIt-cj-ilR"/>
                             <constraint firstItem="mbY-n5-oDX" firstAttribute="leading" secondItem="N2h-vQ-vCU" secondAttribute="leadingMargin" id="qzS-OB-dmD"/>
+                            <constraint firstItem="yiC-vR-vtj" firstAttribute="top" secondItem="5xD-yv-xZp" secondAttribute="bottom" constant="5" id="tg4-qQ-DSa"/>
                             <constraint firstItem="jrK-yD-RPX" firstAttribute="centerY" secondItem="b6F-dP-DhG" secondAttribute="centerY" id="uuN-dd-ngs"/>
                             <constraint firstItem="b6F-dP-DhG" firstAttribute="top" secondItem="iKg-NG-qov" secondAttribute="bottom" id="xdd-61-xRe"/>
                         </constraints>
@@ -379,6 +443,7 @@
                         <outlet property="gameOverLabel" destination="mbY-n5-oDX" id="mjO-nU-831"/>
                         <outlet property="levelLabel" destination="b6F-dP-DhG" id="Ltc-PA-TCX"/>
                         <outlet property="livesLabel" destination="jrK-yD-RPX" id="nGS-BI-JPp"/>
+                        <outlet property="reviewRequestView" destination="5xD-yv-xZp" id="sdv-ZG-zKr"/>
                         <outlet property="saveButton" destination="yX0-OU-DMG" id="2qa-vu-Me5"/>
                         <outlet property="speedLabel" destination="qaX-ST-jp9" id="2rA-dO-Rm5"/>
                         <outlet property="speedSlider" destination="fUn-AM-ysP" id="VH1-RD-SdQ"/>

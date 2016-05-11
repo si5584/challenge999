@@ -26,6 +26,8 @@ class GameVC: UIViewController, ADInterstitialAdDelegate {
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var saveButton: UIButton!
     
+    @IBOutlet weak var reviewRequestView: UIView!
+    
     var selectedGame : Int!
     
     var game : Game!
@@ -137,7 +139,7 @@ class GameVC: UIViewController, ADInterstitialAdDelegate {
             self.game.progressLevel()
             self.game.resetLives()
             
-            shareToFacebook()
+            self.delayTimer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(GameVC.attemptShowReviewRequest), userInfo: nil, repeats: false)
             
         } else {
             self.game.loseLife()
@@ -146,7 +148,7 @@ class GameVC: UIViewController, ADInterstitialAdDelegate {
         if gameOver() {
             self.gameButton.alpha = 0
             loadAd()
-            self.delayTimer = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: #selector(GameVC.gameOverUpdate), userInfo: nil, repeats: false)
+            self.delayTimer = NSTimer.scheduledTimerWithTimeInterval(1.5, target: self, selector: #selector(GameVC.gameOverUpdate), userInfo: nil, repeats: false)
         }
     }
     
@@ -303,6 +305,24 @@ class GameVC: UIViewController, ADInterstitialAdDelegate {
                 
             }
         } catch {print("saveNewGameRecord catch 2")}
+    }
+    
+    
+    func attemptShowReviewRequest () {
+        
+        if self.game.level == 4 {
+            self.reviewRequestView.hidden = false
+        } else {
+            shareToFacebook()
+        }
+        
+    }
+    
+    
+    @IBAction func reviewRequestCloseBtn(sender: AnyObject) {
+        
+        self.reviewRequestView.hidden = true
+        shareToFacebook()
     }
     
 }
