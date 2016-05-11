@@ -27,14 +27,14 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydP-Lw-D18" customClass="StandardButton" customModule="_99challenge" customModuleProvider="target">
-                                <rect key="frame" x="205" y="409" width="190" height="55"/>
+                                <rect key="frame" x="205" y="349" width="190" height="55"/>
                                 <state key="normal" title="Load Game"/>
                                 <connections>
                                     <action selector="loadSavedGames:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rC3-18-61G"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O5o-Co-L1B" customClass="StandardButton" customModule="_99challenge" customModuleProvider="target">
-                                <rect key="frame" x="205" y="334" width="190" height="55"/>
+                                <rect key="frame" x="205" y="274" width="190" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="dba-G7-UwP"/>
                                     <constraint firstAttribute="width" constant="190" id="tnw-I1-pVL"/>
@@ -94,7 +94,7 @@
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JAc-P4-nBU" secondAttribute="bottom" constant="40" id="4jN-YS-q6n"/>
                             <constraint firstItem="Ewv-Zn-q9E" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="46" id="Fyk-6e-Dnv"/>
-                            <constraint firstItem="O5o-Co-L1B" firstAttribute="top" secondItem="Ewv-Zn-q9E" secondAttribute="bottom" constant="140" id="Lqk-zL-ABN"/>
+                            <constraint firstItem="O5o-Co-L1B" firstAttribute="top" secondItem="Ewv-Zn-q9E" secondAttribute="bottom" constant="80" id="Lqk-zL-ABN"/>
                             <constraint firstItem="ydP-Lw-D18" firstAttribute="top" secondItem="O5o-Co-L1B" secondAttribute="bottom" constant="20" id="M9u-0W-MgB"/>
                             <constraint firstItem="Ewv-Zn-q9E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RCx-aO-CIh"/>
                             <constraint firstItem="ydP-Lw-D18" firstAttribute="height" secondItem="O5o-Co-L1B" secondAttribute="height" id="Wke-tE-Uro"/>
@@ -134,7 +134,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="iaG-6E-qc8">
-                                <rect key="frame" x="205" y="160" width="190" height="280"/>
+                                <rect key="frame" x="205" y="180" width="190" height="280"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pls-lI-yvM" customClass="StandardButton" customModule="_99challenge" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="190" height="55"/>
@@ -206,7 +206,7 @@
                         <constraints>
                             <constraint firstItem="iaG-6E-qc8" firstAttribute="centerX" secondItem="Bih-7A-JcG" secondAttribute="centerX" id="0cz-Hx-hMH"/>
                             <constraint firstItem="A3z-Tt-Ep1" firstAttribute="top" secondItem="DFD-5k-qoV" secondAttribute="bottom" constant="10" id="6dH-uT-1iN"/>
-                            <constraint firstItem="iaG-6E-qc8" firstAttribute="centerY" secondItem="Bih-7A-JcG" secondAttribute="centerY" id="Cns-kH-cK7"/>
+                            <constraint firstItem="iaG-6E-qc8" firstAttribute="centerY" secondItem="Bih-7A-JcG" secondAttribute="centerY" constant="20" id="Cns-kH-cK7"/>
                             <constraint firstItem="A3z-Tt-Ep1" firstAttribute="centerX" secondItem="Bih-7A-JcG" secondAttribute="centerX" id="Jec-h7-PYF"/>
                         </constraints>
                     </view>
