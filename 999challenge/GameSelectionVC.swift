@@ -78,6 +78,8 @@ class GameSelectionVC: UIViewController, SKProductsRequestDelegate, SKPaymentTra
                 break
             case .Restored:
                 print("payment queue - Restored")
+                giveProductForPayment(transaction.payment.productIdentifier)
+                SKPaymentQueue.defaultQueue().finishTransaction(transaction)
                 break
             case .Purchasing:
                 print("payment queue - Purchasing")
@@ -85,6 +87,9 @@ class GameSelectionVC: UIViewController, SKProductsRequestDelegate, SKPaymentTra
             case .Deferred:
                 print("payment queue - Deferred")
                 break
+//            default:
+//                SKPaymentQueue.defaultQueue().finishTransaction(transaction as SKPaymentTransaction)
+//                break;
             }
         }
     }
@@ -126,7 +131,7 @@ class GameSelectionVC: UIViewController, SKProductsRequestDelegate, SKPaymentTra
         for game in self.gameTypes {
             if ((game.title! == "infinite") && (game.purchased!.boolValue)){
                 infinitePurchased = true
-            } else if ((game.title! == "infinite") && (game.purchased!.boolValue)){
+            } else if ((game.title! == "chill") && (game.purchased!.boolValue)){
                 timechillPurchased = true
             }
         }
@@ -342,6 +347,13 @@ class GameSelectionVC: UIViewController, SKProductsRequestDelegate, SKPaymentTra
         }
     }
     
+    @IBAction func restorePurchases(sender: UIButton) {
+        
+        SKPaymentQueue.defaultQueue().addTransactionObserver(self)
+        SKPaymentQueue.defaultQueue().restoreCompletedTransactions()
+        //self.navigationController?.popToRootViewControllerAnimated(true)
+        
+    }
     
     
 }
