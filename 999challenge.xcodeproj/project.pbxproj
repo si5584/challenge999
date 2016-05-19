@@ -317,13 +317,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Simon Lovelock (ZM29SFBS37)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Simon Lovelock (SPUF99BA5J)";
 				INFOPLIST_FILE = 999challenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.halo22.999challenge;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9b00a428-0652-4826-8f17-c55547da73d2";
+				PROVISIONING_PROFILE = "86917a2c-5e3b-4123-9559-99920217e107";
 			};
 			name = Debug;
 		};
@@ -331,13 +331,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Simon Lovelock (ZM29SFBS37)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Simon Lovelock (SPUF99BA5J)";
 				INFOPLIST_FILE = 999challenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.halo22.999challenge;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9b00a428-0652-4826-8f17-c55547da73d2";
+				PROVISIONING_PROFILE = "86917a2c-5e3b-4123-9559-99920217e107";
 			};
 			name = Release;
 		};
